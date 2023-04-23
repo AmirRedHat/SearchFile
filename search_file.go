@@ -44,7 +44,7 @@ func read_dir_files(path string) ([]File){
 
 func main(){
 	s_file_name := "algorithms.py";
-	files := read_dir_files("C:/Users/amirc/OneDrive/Desktop/WorkSpace/Projects/Practice/");
+	files := read_dir_files("./Projects/Practice/");
 	for _, f := range(files){
 		if f.search_file(s_file_name){
 			fmt.Println("find: ", f.path)
